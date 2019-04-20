@@ -1,34 +1,39 @@
-# GitHub User Finder
+# Inventory Management System
 
-[![GitHub](https://img.shields.io/github/license/kryptonb/github-user-finder.svg?style=popout)](https://choosealicense.com/licenses/mit/)
+[![GitHub](https://img.shields.io/github/license/kryptonb/inventory-management-system.svg?style=popout)](https://choosealicense.com/licenses/mit/)
 
-An AJAX web app that pulls GitHub user details and repo details when you enter a GitHub username. It uses [GitHub API](https://developer.github.com/v3/) to retrieve these details.  
+A simple PHP web system for managing an inventory.  
   
-You can access a demo at: https://kryptonb.github.io/github-user-finder/ 
+Screenshots:   
 
-![User details](https://github.com/KryptonB/github-user-finder/blob/master/screenshots/results.PNG)
+![Item details](https://github.com/KryptonB/inventory-management-system/blob/master/screenshots/item.PNG)  
+![Sale details](https://github.com/KryptonB/inventory-management-system/blob/master/screenshots/sale.PNG)  
+![Search details](https://github.com/KryptonB/inventory-management-system/blob/master/screenshots/search.PNG)  
 
 ## Installation
-* Download the docs folder and open [index.html](index.html) file in a browser
-* Remove the api key in [main.js](js/main.js) and use your own key
+* Clone the repository and move the root folder to the deployment folder of your browser. (for Apache, this is htdocs)
+* Create a blank DB called *shop_inventory* in MySQL
+* Create a new user called _inventoryUser_ with a password as _password_ and give full permission to that user.
+* Load the sql dump to the newly created _shop_inventory_ database
+* Change the root url of your website in [constants.php](inc/config/constants.php) file
 
-### Requirements
-* GitHub API key
+## Requirements
+* PHP
+* MySQL
+* Apache
 * Google Chrome web browser (JavaScript enabled)
 * Internet connection with a reasonable speed
 
 ## Usage
-* Start typing a GitHub username and the details will be populated below the search box
+* Access the login.php file from via browser and give _guest_ as username and _1234_ as password
 
 ## Built With
+* PHP - Scripting language
+* MySQL - Database management system
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) - Basic markup
 * [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - Basic styling
 * [Bootstrap 4.1.1](https://getbootstrap.com/) - Responsive framework
 * [jQuery 3.3.1](https://jquery.com/) - JS framework
 
 ## Acknowledgments
-* Uses the [GitHub API](https://developer.github.com/v3/)
-* Inspired by Brad Traversy's GitHub finder
-
-## TODO
-* Format the UI a bit more :) 
+* Inspired by many similar projects online
