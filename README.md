@@ -5,8 +5,7 @@
 A simple PHP web system for managing an inventory.  
   
 Screenshots:   
-
-![Item details](https://github.com/KryptonB/inventory-management-system/blob/master/screenshots/item.PNG)  
+ 
 ![Sale details](https://github.com/KryptonB/inventory-management-system/blob/master/screenshots/sale.PNG)  
 ![Search details](https://github.com/KryptonB/inventory-management-system/blob/master/screenshots/search.PNG)  
 
