@@ -106,7 +106,8 @@ saleFilteredReportCreatorFile = 'model/sale/saleFilteredReportTableCreator.php';
 
 
 $(document).ready(function(){
-	// Style the dropdown boxes
+	// Style the dropdown boxes. You need to explicitly set the width 
+    // in order to fix the dropdown box not visible issue when tab is hidden
 	$('.chosenSelect').chosen({ width: "95%"});
 	
 	// Initiate tooltips
