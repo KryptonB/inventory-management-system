@@ -10,7 +10,7 @@ Screenshots:
 ![Search details](https://github.com/KryptonB/inventory-management-system/blob/master/screenshots/search.PNG)  
 
 ## Installation
-* Clone the repository and move the root folder to the deployment folder of your server. (for Apache, this is htdocs)
+* Fork the repository and move the root folder to the deployment folder of your server. (for Apache, this is htdocs)
 * Create a blank DB called *shop_inventory* in MySQL
 * Create a new user called _inventoryUser_ with a password as _password_ and give full permission to that user.
 * Load the sql dump to the newly created _shop_inventory_ database
