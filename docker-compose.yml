@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+
+  loki:
+    image: grafana/loki:2.9.1
+    ports:
+      - "3100:3100"
+    command: -config.file=/etc/loki/local-config.yaml
+
+  promtail:
+    image: grafana/promtail:2.9.1
+    volumes:
+      - ./logs:/var/log        # ← folder logs lokal ke /var/log di dalam container
+      - ./promtail-config.yaml:/etc/promtail/promtail.yaml
+    command: -config.file=/etc/promtail/promtail.yaml
+
+  sonarqube:
+      image: sonarqube:community
+      container_name: sonarqube
+      ports:
+        - "9000:9000"
+      environment:
+        - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
+      volumes:
+        - sonarqube_data:/opt/sonarqube/data
+        - sonarqube_extensions:/opt/sonarqube/extensions
+        - sonarqube_logs:/opt/sonarqube/logs
+volumes:
+    sonarqube_data:
+    sonarqube_extensions:
+    sonarqube_logs:

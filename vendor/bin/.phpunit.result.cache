@@ -1,0 +1,1 @@
+{"version":1,"defects":{"LoginTest::testValidLogin":7,"LoginTest::testInvalidLogin":8,"PurchaseTest::testAddNewPurchase":7},"times":{"LoginTest::testValidLogin":0.007,"LoginTest::testInvalidLogin":0.001,"PurchaseTest::testAddNewPurchase":0.001}}

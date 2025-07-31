@@ -1,0 +1,7 @@
+
+
+$logMessage = date('Y-m-d H:i:s') . " - User $username attempted login\n";
+error_log($logMessage, 3, __DIR__ . '/../../logs/app.log');
+
+
+error_log(date('Y-m-d H:i:s') . " - Log test\n", 3, __DIR__ . '/../logs/app.log');
