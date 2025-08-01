@@ -1,5 +1,5 @@
 <?php
-	// Connect to database
+	// Mencoba Connect to database
 	try{
 		$conn = new PDO(DSN, DB_USER, DB_PASSWORD);
 		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -8,4 +8,4 @@
 		echo $errorMessage;
 		exit();
 	}
-?>
+	// Mencoba menggunakan koneksi
