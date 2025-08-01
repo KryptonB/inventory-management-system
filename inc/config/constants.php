@@ -11,10 +11,10 @@
 	define('DB_HOST', 'localhost');
 	
 	// DB user
-	define('DB_USER', 'inventoryUser');
+	define('DB_USER', 'root');
 	
 	// DB password
-	define('DB_PASSWORD', 'password');
+	define('DB_PASSWORD', '');
 	
 	// DB name
 	define('DB_NAME', 'shop_inventory');
