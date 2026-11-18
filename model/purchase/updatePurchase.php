@@ -1,4 +1,5 @@
 <?php
+	require_once(__DIR__ . '/../authGuard.php');
 
 // Updated script - 2018-05-09
 

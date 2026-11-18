@@ -1,4 +1,5 @@
 <?php
+	require_once(__DIR__ . '/../authGuard.php');
 	$vendorNamesSql = 'SELECT * FROM vendor';
 	$vendorNamesStatement = $conn->prepare($vendorNamesSql);
 	$vendorNamesStatement->execute();
