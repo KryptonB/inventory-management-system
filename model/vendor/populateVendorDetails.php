@@ -1,4 +1,5 @@
 <?php
+	require_once(__DIR__ . '/../authGuard.php');
 	require_once('../../inc/config/constants.php');
 	require_once('../../inc/config/db.php');
 

@@ -1,4 +1,5 @@
 <?php
+	require_once(__DIR__ . '/../authGuard.php');
 	$itemDetailsSql = 'SELECT itemName FROM item';
 	$itemDetailsStatement = $conn->prepare($itemDetailsSql);
 	$itemDetailsStatement->execute();
